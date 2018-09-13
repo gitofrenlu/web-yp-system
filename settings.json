@@ -1,0 +1,26 @@
+{
+    "project": "yuanpeng-business-system",
+    "deploy": {
+        "qa": {
+            "servers": [{
+                "username": "root",
+                "host": "192.168.49.147"
+                }
+            ],
+            "targetDist": "dist/yuanpeng-business-system",
+            "testServerDirectory": "/opt/soft/tengine/html/",
+            "buildIndex": "../dist/yuanpeng-business-system/index.html",
+            "assetsRoot": "../dist/yuanpeng-business-system",
+            "assetsSubDirectory": "../yuanpeng-business-system/static/",
+            "assetsPublicPath": "./"
+        },
+        "www": {
+            "targetDist": "dist__www/yuanpeng-business-system",
+            "feReleaseDist": "../web-release-group",
+            "buildIndex": "../dist__www/yuanpeng-business-system/index.html",
+            "assetsRoot": "../dist__www/yuanpeng-business-system",
+            "assetsSubDirectory": "static",
+            "assetsPublicPath": "//ypstore.hikememo.com/"
+        }
+    }
+}
